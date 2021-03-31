@@ -1,6 +1,7 @@
-# maCSentence API
+# 🇨🇿 maCSentence API
 
-Make czech sentences from czech text input.
+- Make Czech sentences from Czech input text.
+- Run this project in a Docker container and use it as an API for your project.
 
 Z českého textu na vstupu vrátí pole českých vět :).
 
