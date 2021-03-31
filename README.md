@@ -2,18 +2,34 @@
 
 Make a czech sentences from czech text input.
 
-Z českého textu vrací pole českých vět :).
+Z českého textu na vstupu vrací pole českých vět :).
 
-Všechno díky (díky, díky!) projektu [Centra zpracování přirozeného jazyka (MUNI, Brno)](https://nlp.fi.muni.cz/projekty/rozdelovac_vet/control.cgi).
+Všechno díky (fakt díky!) projektu [Centra zpracování přirozeného jazyka (FI MUNI, Brno)](https://nlp.fi.muni.cz/projekty/rozdelovac_vet/control.cgi). Autorem rozdělovače (celá složka **separator** zde v projektu) je práce Mgr. Petra Machovce.
 
-### Running locally
+### Install
 
 * install node >= 10
 * install dependencies with yarn
 
+#### Run it locally: 
+
 ```
 $ node index.js
 ```
+
+#### Or you can use Docker:
+
+```
+$ docker build -t maczentence .
+$ docker run -i -t --rm --env-file=./.env -p=3001:3001 --name="maczentence" maczentence
+```
+
+Or the same as above with makefile that is a part of the project:
+
+```
+$ make build
+$ make run
+``` 
 
 ## Usage
 
