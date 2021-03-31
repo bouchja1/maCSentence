@@ -4,7 +4,7 @@ Make czech sentences from czech text input.
 
 Z českého textu na vstupu vrátí pole českých vět :).
 
-Všechno díky (fakt díky!) projektu [Centra zpracování přirozeného jazyka (FI MUNI, Brno)](https://nlp.fi.muni.cz/projekty/rozdelovac_vet/control.cgi). Autorem rozdělovače (celá složka **separator** zde v projektu) je práce Mgr. Petra Machovce.
+Všechno díky (fakt díky!) projektu [Centra zpracování přirozeného jazyka (FI MUNI, Brno)](https://nlp.fi.muni.cz/projekty/rozdelovac_vet/control.cgi). Autorem rozdělovače (celá složka [separator](separator) zde v projektu) je práce Mgr. Petra Machovce.
 
 ### Install
 
