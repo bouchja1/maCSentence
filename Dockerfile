@@ -25,3 +25,5 @@ RUN chmod +x /wait
 
 # expose port
 EXPOSE 3001
+
+CMD ["yarn", "start"]
