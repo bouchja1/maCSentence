@@ -36,6 +36,7 @@ router.post('/sentence', async (ctx, next) => {
             ctx.status = 500;
         }
     } catch (err) {
+        console.log("Error: ", err)
         ctx.status = 500;
     }
     await next();
