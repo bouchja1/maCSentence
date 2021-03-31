@@ -1,8 +1,8 @@
-# macZentence API
+# maCSentence API
 
-Make a czech sentences from czech text input.
+Make czech sentences from czech text input.
 
-Z českého textu na vstupu vrací pole českých vět :).
+Z českého textu na vstupu vrátí pole českých vět :).
 
 Všechno díky (fakt díky!) projektu [Centra zpracování přirozeného jazyka (FI MUNI, Brno)](https://nlp.fi.muni.cz/projekty/rozdelovac_vet/control.cgi). Autorem rozdělovače (celá složka **separator** zde v projektu) je práce Mgr. Petra Machovce.
 
@@ -20,8 +20,8 @@ $ node index.js
 #### Or you can use Docker:
 
 ```
-$ docker build -t maczentence .
-$ docker run -i -t --rm --env-file=./.env -p=3001:3001 --name="maczentence" maczentence
+$ docker build -t macsentence .
+$ docker run -i -t --rm --env-file=./.env -p=3001:3001 --name="macsentence" macsentence
 ```
 
 Or the same as above with makefile that is a part of the project:

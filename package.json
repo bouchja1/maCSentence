@@ -1,7 +1,7 @@
 {
-  "name": "macZentence",
+  "name": "macsentence",
   "version": "1.0.0",
-  "description": "Make czech sentences from text!",
+  "description": "Make czech sentences from czech text input.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
