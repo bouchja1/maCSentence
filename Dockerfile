@@ -1,5 +1,5 @@
 # start from base
-FROM node:14-alpine3.13 as builder
+FROM node:10-alpine as builder
 
 MAINTAINER Jan Bouchner <jan.bouchner@gmail.com>
 
@@ -10,7 +10,7 @@ COPY package*.json ./
 RUN yarn
 
 # The instructions for second stage
-FROM node:14-alpine3.13
+FROM node:10-alpine
 
 WORKDIR /usr/src/app
 COPY --from=builder node_modules node_modules
