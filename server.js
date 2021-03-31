@@ -18,22 +18,16 @@ router.post('/sentence', async (ctx, next) => {
     ];
     // spawn new child process to call the python script
     try {
-        const sentencesArray = spawn(`python`, scriptArgs, { cwd: process.cwd(), encoding: 'utf-8' });
-        if (sentencesArray && sentencesArray.length) {
-            const sentences = sentencesArray.filter(sentence => sentence).map(sentence => {
-                return sentence.replace(/^\d\./, '');
-            });
-            if (sentences.length === 1) {
-                const [ notSplitSentences ] = sentences;
-                ctx.body = {
-                    sentences: notSplitSentences.split('\\SEPARATOR')
-                }
-                ctx.status = 200;
-            } else {
-                ctx.status = 400;
+        let sentencesResultArray = spawn(`python`, scriptArgs, { cwd: process.cwd(), encoding: 'utf-8' });
+        sentencesResultArray = sentencesResultArray.filter(sentence => sentence);
+        if (sentencesResultArray.length === 1) {
+            const [ joinedSeparatedSentences ] = sentencesResultArray;
+            ctx.body = {
+                sentences: joinedSeparatedSentences.split('\\SEPARATOR')
             }
+            ctx.status = 200;
         } else {
-            ctx.status = 500;
+            ctx.status = 400;
         }
     } catch (err) {
         console.log("Error: ", err)

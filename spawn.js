@@ -21,7 +21,7 @@ module.exports = (cmd, args = [], options = {}) => {
                 'be shutting down.'
             );
         }
-        return null;
+        throw new Error('Cannot obtain sentences.')
     }
 
     return result.output;
