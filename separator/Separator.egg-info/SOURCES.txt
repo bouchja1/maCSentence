@@ -1,0 +1,15 @@
+MANIFEST.in
+README.txt
+formate_result.py
+separator.py
+setup.cfg
+setup.py
+Separator.egg-info/PKG-INFO
+Separator.egg-info/SOURCES.txt
+Separator.egg-info/dependency_links.txt
+Separator.egg-info/top_level.txt
+separator.egg-info/SOURCES.txt
+separator_data/abbreviations.txt
+separator_data/separators.txt
+separator_data/starters.txt
+separator_data/terminators.txt
