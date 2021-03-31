@@ -3,7 +3,7 @@ FROM node:10.24-alpine as builder
 
 MAINTAINER Jan Bouchner <jan.bouchner@gmail.com>
 
-RUN apk --no-cache add python make g++
+RUN apk add --no-cache python make g++
 
 COPY package*.json ./
 
@@ -21,6 +21,7 @@ COPY . .
 # fetch app specific deps
 ## Add the wait script to the image
 ADD https://github.com/ufoscout/docker-compose-wait/releases/download/2.7.3/wait /wait
+RUN apk add --no-cache python
 RUN chmod +x /wait
 RUN chmod -R +x /usr/src/app/separator/separator.py
 
