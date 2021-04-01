@@ -15,7 +15,7 @@ Všechno díky projektu [Centra zpracování přirozeného jazyka (FI MUNI, Brno
 #### Run it locally: 
 
 ```
-$ node index.js
+$ yarn start
 ```
 
 #### Or you can use Docker:
